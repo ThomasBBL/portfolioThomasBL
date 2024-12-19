@@ -1,0 +1,525 @@
+.logo { 
+
+    width: 100%; 
+    
+    display: flex; 
+    
+    justify-content: end; 
+    
+    gap: 0.75rem; 
+    
+    } 
+    
+     
+    
+     
+    
+    .container { 
+    
+        display: flex; 
+    
+        flex-direction: row; 
+    
+        height: 40%; 
+    
+        width: 100%; 
+    
+        margin-top: 5px; 
+    
+        gap: 20px;  
+    
+        justify-content: space-between; 
+    
+    } 
+    
+     
+    
+    .left-column { 
+    
+        width: 50%; 
+    
+        display: flex; 
+    
+        flex-direction: column; 
+    
+        height: 50%; 
+    
+    } 
+    
+     
+    
+    .search-bar { 
+    
+        display: flex; 
+    
+        flex-direction:column; 
+    
+       justify-content: start; 
+    
+       width: 90%; 
+    
+      
+    
+    } 
+    
+     
+    
+    .search-bar img { 
+    
+        margin-right: 10px; 
+    
+    } 
+    
+     
+    
+    .input-container { 
+    
+        display: flex; 
+    
+        flex-direction: row; 
+    
+        width: 100%; 
+    
+        border: solid black; 
+    
+        height: 20%; 
+    
+    
+    
+    } 
+    
+     
+    
+    .input-container input { 
+    
+     
+    
+        padding: 0.5rem; 
+    
+    padding-right: 10rem; 
+    
+    } 
+    
+     
+    
+    #search { 
+    
+        text-align: center; 
+    
+        display: flex; 
+    
+        justify-content: center; 
+    
+        align-items: center; 
+    
+        padding: 7px 10px; 
+    
+        background-color: rgb(226, 43, 180); 
+    
+        color: white; 
+    
+        cursor: pointer;  
+    
+        padding-top: 10px; 
+    
+        height: 20%; 
+    
+        border: solid black; 
+    
+        border-left: none; 
+    
+         
+    
+    } 
+    
+     
+    
+    .miam-miam { 
+    
+        font-family: sans-serif; 
+    
+        font-weight: bold; 
+    
+     text-align: center; 
+    
+            height: 100px;  
+    
+            margin-top: 10px; 
+    
+        width: 70%; 
+    
+       font-size: 17px; 
+    
+        } 
+    
+     
+    .menu { 
+    
+        background-color:#af0c8f; 
+    
+        border: none;  
+    
+        color: white; 
+    
+        padding: 3.5px 20px; 
+    
+        font-size: 16px; 
+    
+        margin: 7px 8px;  
+    
+        cursor: pointer;  
+    
+     justify-content: center;
+  
+    
+    } 
+    
+    .sous-menu { 
+    
+    text-align: center; 
+    
+    justify-content: center; 
+    
+    padding-left: 50px ; 
+    
+    padding-top: 75px ; 
+    
+    margin-left: 25px; 
+    
+    padding-right: 50px; 
+    width: 50%;
+    } 
+    
+    .photo1 { 
+    
+    size: 200px 200px; 
+    
+    display: flex; 
+    
+    flex-direction: row; 
+    
+    } 
+    
+    .sous-menu{ 
+    
+        background-color:#af0c8f; 
+    
+        background-size: 100px 100px 
+    
+    } 
+    
+    .sous-menu2{ 
+    
+        display: flex; 
+        flex-direction:row; 
+        justify-content: center; 
+        background-color: #4c66af; 
+        align-items: center; 
+        padding-left: 50px; 
+        margin-left : 25px ; 
+        padding-right: 50px; 
+        padding-bottom: 140px; 
+    } 
+    
+     
+    
+    .jour{ 
+    
+        background-color:#af0c8f; 
+    
+    color: white; 
+    
+    padding: 18px 18px ; 
+    
+    } 
+    
+    .marmelade{ 
+    
+       width: 32%; 
+       background-color: #7eaa3c; 
+        padding-bottom: 10px; 
+    
+    } 
+    
+    .marmelade > img { 
+    
+        width: 100%; 
+    
+    } 
+    
+    .pomme-de-terre { 
+    
+        width: 32%; 
+    
+       background-color: #0673ad; 
+    
+        padding-bottom: 10px;  
+    
+    } 
+    
+    .pomme-de-terre > img { 
+    
+     width: 100%; 
+    
+    } 
+    
+     
+    
+    .cartes { 
+    
+        display: flex; 
+    
+        flex-direction: row; 
+    
+        justify-content: space-around; 
+    
+        gap: 25px; 
+    
+  
+    
+    } 
+    
+     
+    
+    .carte { 
+    
+        width: 32%; 
+    
+        height: 30%; 
+    
+        display: flex; 
+    
+        flex-direction: column; 
+    
+        gap: 0; 
+    
+    } 
+    
+     
+    
+    .carte > img { 
+    
+        width: 100%; 
+    
+    } 
+    
+     
+    
+    .carte > .description { 
+    
+        height: 200px; 
+    
+        padding: 50px; 
+    
+        padding-bottom: 90px; 
+    
+    } 
+    
+     
+    
+    .description > h4 { 
+    
+        margin: 0; 
+    
+     
+    
+    } 
+    
+     
+    
+    .description > p { 
+    
+        overflow-wrap: break-word; 
+    
+    } 
+    
+    #carte1{ 
+    
+        background-color: #8dc31a; 
+    
+    } 
+    
+    #carte2{ 
+    
+        background-color: #0673ad; 
+    
+    } 
+    
+    #carte3{ 
+    
+        background-color: #af0c8f; 
+    
+    } 
+    
+    .auteur { 
+    
+        margin-top: 0; 
+    
+        width: 100%; 
+    
+        height: 60px; 
+    
+        display: flex; 
+    
+        justify-items: center; 
+    
+        text-align: start; 
+    
+        gap: 12px; 
+    
+        border: solid black; 
+    
+        border-top: 0; 
+    
+        align-items: center; 
+    
+    } 
+    
+     
+    
+    .auteur > img { 
+    
+        height: 50px; 
+    
+    } 
+    
+     
+    
+    
+    body { 
+    
+        font-family: Arial, sans-serif;  
+    
+    } 
+    
+     
+    
+    .button-container { 
+    
+        display: flex; 
+    
+        gap: 10px; 
+    
+        margin-top: 0px; 
+    
+        justify-content: flex-end; 
+       
+    
+    } 
+    
+     
+    
+    .btn { 
+    
+        border: none; 
+    
+        font-size: 16px; 
+    
+        color: white; 
+    
+        cursor: pointer; 
+    
+        transition: background-color 0.3s ease; 
+    
+        text-align: center; 
+    
+        justify-content: center; 
+    
+       padding: 11px 25px; 
+    
+    } 
+    
+     
+    
+     
+    
+    .se-connecter { 
+    
+        background-color: #a5cd39;  
+    
+        
+    
+    } 
+    
+     
+    
+    .creer-compte { 
+
+        background-color: #2f6dab;  
+    
+       
+    
+    } 
+    
+     
+    
+    .deposer-recette { 
+    
+        background-color: #a50e77; 
+    
+        gap: 10px; 
+    
+        justify-content: end; 
+    
+        text-align: center; 
+    
+     
+    
+    } 
+    
+        
+    
+    .btn:hover { 
+    
+        opacity: 0.8; 
+    
+        background-color: green; 
+    
+    } 
+    
+    .olala { 
+    
+       
+    
+       display: flex; 
+    
+       flex-direction: column; 
+    
+       gap: 10px; 
+    
+    justify-content: center; 
+    
+     
+    
+    } 
+    
+     
+    
+     .button.menu {
+        justify-content: center;
+        width: 50%;
+        padding: 20px 10px;
+     }
+    .form {
+        justify-content: center;
+        width: 50%;
+    }
+     
+
+    .footer {
+        background-color: black;
+        height: 100px;
+        width: 100%;
+        margin-top: 0px;
+        padding-bottom: 45px;
+    }
+
+
+
+    .menu a, .btn, .input-container {
+        text-decoration: none;
+    }
+
+
+
+

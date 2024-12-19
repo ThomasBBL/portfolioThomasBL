@@ -1,0 +1,422 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #2c3e50;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+}
+
+
+.navbar2 {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(135deg, #2c3e50, #4ca1af);
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+}
+
+.navbar2 a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    margin: 0 10px;
+}
+
+.navbar2 a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+.container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 30px;
+    opacity: 0;
+    transform: translateY(100%); 
+    animation: slideInFromBottom 3s ease-in-out forwards; /* animation arriver du container*/
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(100%); 
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); 
+    }
+}
+
+.sidebar {
+    width: 30%;
+    background: linear-gradient(135deg, #2c3e50, #4ca1af);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.profile-photo img {
+    width: 100%;
+    height: auto;
+    
+    
+        border-radius: 60%; 
+    }
+    
+
+
+
+.moi {
+    width: 70%;
+    padding: 30px;
+}
+
+.moi h1 {
+    font-size: 2.2rem;
+    color: #33475b;
+}
+
+.moi h2 {
+    font-size: 1.3rem;
+    color: #4ca1af;
+    margin-top: 8px;
+}
+
+.moi p {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 15px;
+}
+
+
+.sections {
+    margin-top: 20px;
+}
+
+.sections section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.sections h3 {
+    font-size: 1.3em;
+    color: #2c3e50;
+    border-bottom: 2px solid #4ca1af;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+
+.sous-experience {
+    margin-top: 8px;
+}
+
+
+.project-gallery {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.project {
+    width: 100px;
+    height: 100px;
+    background-color: #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.hero {
+    background: url('votre-image-hero.jpg') center/cover no-repeat;
+    color: #4ca1af;
+    text-align: center;
+    padding: 60px 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    width: 100%;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite; /* animation arriver du texte*/
+      
+    }
+    
+    @keyframes typing {
+        from { width: 0; }
+        to { width: 100%; }
+    }
+    
+    @keyframes blink-caret {
+        from, to { border-color: transparent; }
+        50% { border-color: black; }
+    }
+    
+
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+
+.moving-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    animation: pixel-move 3s infinite alternate;
+}
+
+@keyframes pixel-move {
+    0% { transform: translate(-50%, -50%) scale(1); }
+    50% { transform: translate(-50%, -50%) scale(1.1) rotate(5deg); }
+    100% { transform: translate(-50%, -50%) scale(1); }
+}
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.social-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+.social-icon:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.social-icon img {
+    width: 32px;
+    height: 32px;
+  
+}
+
+.sidebar .social-icons {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    gap: 15px;
+}
+
+.sidebar .social-icon img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease;
+}
+
+
+.sidebar .social-icon img:hover {
+    transform: scale(1.1);
+}
+
+
+
+.project {
+    width: 50px; 
+    height: 50px; 
+    background-color: #ddd;
+    border-radius: 8px; 
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+}
+
+
+.dbz {
+    position: absolute;
+    top: 1%; 
+    
+    width: 90%; 
+    z-index: -1; 
+    opacity: 0.5; 
+}
+
+.dbz img {
+    width: 100%; 
+    height: auto; 
+    animation: rotation 10s linear infinite;
+}
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
+
+.snowflake {
+    position: fixed;
+    top: -10px;
+    color: white;
+    user-select: none;
+    z-index: 1000;
+    pointer-events: none;
+    animation-name: snowfall;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes snowfall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+    }
+}
+
+
+
+
+
+
+/* Styles de base pour le bonhomme de neige */
+.snowman {
+    width: 230px;
+    height: auto;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+    transition: transform 1s ease;
+}
+
+.from-left {
+    left: 0;
+    transform: scaleX(-1); /* Retourne l'image horizontalement */
+    animation: slideInLeft 1s forwards;
+}
+
+.from-right {
+    right: 0;
+    animation: slideInRight 1s forwards;
+}
+
+.visible {
+    display: block;
+}
+
+/* Animation d'entrée depuis la gauche */
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%) translateY(-50%) scaleX(-1);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0) translateY(-50%) scaleX(-1);
+        opacity: 1;
+    }
+}
+
+/* Animation d'entrée depuis la droite */
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%) translateY(-50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0) translateY(-50%);
+        opacity: 1;
+    }
+}
+
+/* Animation de sortie vers la gauche */
+@keyframes slideOutLeft {
+    from {
+        transform: translateX(0) translateY(-50%) scaleX(-1);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(-100%) translateY(-50%) scaleX(-1);
+        opacity: 0;
+    }
+}
+
+/* Animation de sortie vers la droite */
+@keyframes slideOutRight {
+    from {
+        transform: translateX(0) translateY(-50%);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(100%) translateY(-50%);
+        opacity: 0;
+    }
+}
+
+/* Classes pour déclencher l'animation de sortie */
+.slide-out-left {
+    animation: slideOutLeft 1s forwards;
+}
+
+.slide-out-right {
+    animation: slideOutRight 1s forwards;
+}
